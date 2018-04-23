@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>首頁</title>
+  <!-- Custom styling plus plugins -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../vendor/bootstrap/fonts/css/font-awesome.css" rel="stylesheet">
+  <link href="../vendor/gentelella/custom.css" rel="stylesheet">
+  <link href="../dist/css/style.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container iframe-container body">
+    <div class="right_col">
+	  <div class="row">
+        <div class="x_panel">
+		  <div class="x_content">
+            <p>
+              感谢访问查看TangJunfeng的简历。</p>
+          </div>
+		</div>
+	  </div>
+    </div>
+  </div>
+
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../vendor/gentelella/custom.js"></script>
+  <script src="../build/js/iframeTab.js"></script>
+  <script>
+    var iframeTabOption = {
+        callback: {
+            beforeCreat: function () {
+                alert('操作被終止了');
+                return false
+            }
+        }
+    }
+    iframeTab.init();
+  </script>
+</body>

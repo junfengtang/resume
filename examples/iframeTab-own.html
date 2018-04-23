@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TangJunfeng 项目经验</title>
+    <!-- Custom styling plus plugins -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendor/bootstrap/fonts/css/font-awesome.css" rel="stylesheet">
+    <link href="../vendor/gentelella/custom.css" rel="stylesheet">
+    <link href="../dist/css/style.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container iframe-container body">
+    <div class="right_col">
+        <div class="clearfix">
+            <div class="page-title">
+                <div class="title_left">
+
+                    <h3>项目经验</h3>
+                </div>
+                <div class="title_right">
+                    <div class="pull-right">
+                        <a href="#"><i class="fa fa-refresh"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="x_panel">
+                <div class="x_title clearfix">
+                    <h2>微信小程序:【天气工具类】</h2>
+
+                    <p>2018.02-2018.03</p>
+                </div>
+                <div class="x_content">
+                    <ol class="change-log">
+                        <li>php 编写代码抓取全国省市信息，并且拼接输出 xml 格式。</li>
+                        <li>天气查询采集中国天气网数据。半小时遍历一遍所有城市，定时缓存天气数据到 Redis。</li>
+                        <li>使用 springboot 编写业务代码，完成版本1.0，并且购置服务器，配置 SSL 证书，搭建 java 环境将天气 数据接口上线。</li>
+                        <li>后面进行小程序开发，手绘原型图，编写小程序代码，测试审核上线。</li>
+                        <li>采用 springcloud 进行业务拆分，拆分为城市信息微服务，天气存储微服务，天气数据微服务。</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="x_panel">
+                <div class="x_title clearfix">
+                    <h2>编写 shell 脚本</h2>
+                </div>
+                <div class="x_content">
+                    <ol class="change-log">
+                        <li>由于平常管理服务器比较多，而且平台杂乱，有阿里云、digitalocean、AWS、腾讯云;每次登陆服务器 要敲长串代码，所以编写 shell 脚本，将服务器分门别类，shell 脚本 alias 到环境变量，方便平时登陆不 同服务器(只要敲几个字母和一个数字就完成登陆哦~)</li>
+                        <li>利民信息化项目 java 环境的项目部署脚本</li>
+                        <li>定时拷贝 hybris 日志等等.</li>
+                    </ol>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="../vendor/gentelella/custom.js"></script>
+<script src="../dist/js/iframeTab.min.js"></script>
+<script>
+    var iframeTabOption = {}
+    iframeTab.init(iframeTabOption);
+</script>
+</body>

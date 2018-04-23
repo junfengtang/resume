@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>iframeTab 更新日誌</title>
+  <!-- Custom styling plus plugins -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../vendor/bootstrap/fonts/css/font-awesome.css" rel="stylesheet">
+  <link href="../vendor/gentelella/custom.css" rel="stylesheet">
+  <link href="../dist/css/style.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container iframe-container body">
+    <div class="right_col">
+      <div class="clearfix">
+        <div class="page-title">
+          <div class="title_left">
+
+            <h3>iframeTab 更新日誌</h3>
+          </div>
+		  <div class="title_right">
+			<div class="pull-right">
+			  <a href="#"><i class="fa fa-refresh"></i></a>
+			</div>
+		  </div>
+        </div>
+      </div>
+	  <div class="row">
+		<div class="x_panel">
+		  <div class="x_title clearfix">
+			<h2>V2.3.5.1 2017.02.20</h2>
+		    <ul class="nav navbar-right panel_toolbox">
+			  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+            </ul>
+          </div>
+		  <div class="x_content">
+            <ul class="change-log">
+              <li>ID格式統一，<code>tabsHeader</code> 改為 <code>tabHeader</code>。</li>
+            </ul>
+		  </div>
+		</div>
+		<div class="x_panel">
+		  <div class="x_title clearfix">
+			<h2>V2.3.5 2017.02.19</h2>
+		    <ul class="nav navbar-right panel_toolbox">
+			  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+            </ul>
+          </div>
+		  <div class="x_content">
+            <ul class="change-log">
+              <li>修復新建頁面時，<code>iframeTab.iframeHeight()</code> 執行了兩次的bug。</li>
+              <li>刪除多餘的變量聲明。</li>
+              <li>優化jQuery選擇器。</li>
+              <li>逐步減少對jQuery的依賴，使用原生JavaScript，提高速率。</li>
+              <li>為了減少對Dom的遍歷，提高操作速度，html結構有所修改：標籤欄的 <code>&lt;ul&gt;</code> 添加父級 <code>&lt;div id=&quot;tabsHeader&quot;&gt;</code>，iframe的最上級元素改為 <code>&lt;div id=&quot;tabBody&quot;&gt;</code>。詳情可參考文檔。</li>
+            </ul>
+		  </div>
+		</div>
+		<div class="x_panel">
+		  <div class="x_title clearfix">
+			<h2>V2.3.4 2017.02.03</h2>
+		    <ul class="nav navbar-right panel_toolbox">
+			  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+            </ul>
+          </div>
+		  <div class="x_content">
+            <ul class="change-log">
+              <li>優化事件回調函數代碼，提高性能。</li>
+              <li>優化事件委託部分，減少傳遞。</li>
+            </ul>
+		  </div>
+		</div>
+		<div class="x_panel">
+		  <div class="x_title clearfix">
+			<h2>V2.3.3 2017.01.12</h2>
+		    <ul class="nav navbar-right panel_toolbox">
+			  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+            </ul>
+          </div>
+		  <div class="x_content">
+            <ul class="change-log">
+              <li>多開鏈接以時間戳為身份證。</li>
+              <li>減少右鍵菜單展開關閉時重繪重排DOM，減少遍歷，增強性能，提高展開菜單速度。</li>
+            </ul>
+		  </div>
+		</div>
+		<div class="x_panel">
+		  <div class="x_title clearfix">
+			<h2>V2.3.2 2017.01.10</h2>
+		    <ul class="nav navbar-right panel_toolbox">
+			  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+            </ul>
+          </div>
+		  <div class="x_content">
+            <ul class="change-log">
+              <li>精簡代碼，減少遍歷。</li>
+            </ul>
+		  </div>
+		</div>
+		<div class="x_panel">
+		  <div class="x_title clearfix">
+			<h2>V2.3.1.1 2017.01.09</h2>
+		    <ul class="nav navbar-right panel_toolbox">
+			  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+            </ul>
+          </div>
+		  <div class="x_content">
+            <ul class="change-log">
+              <li>修復子級頁面創建窗口並刪除後，不能再重新創建同一窗口bug。</li>
+            </ul>
+		  </div>
+		</div>
+		<div class="x_panel">
+		  <div class="x_title clearfix">
+			<h2>V2.3.1 2017.01.09</h2>
+		    <ul class="nav navbar-right panel_toolbox">
+			  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+            </ul>
+          </div>
+		  <div class="x_content">
+            <ul class="change-log">
+              <li>修復標籤超過一行時，右鍵菜單批量關閉標籤後，折疊按鈕沒有清除bug。</li>
+              <li>代碼結構優化。</li>
+            </ul>
+		  </div>
+		</div>
+		<div class="x_panel">
+		  <div class="x_title clearfix">
+			<h2>V2.3.0 2017.01.07</h2>
+		    <ul class="nav navbar-right panel_toolbox">
+			  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+            </ul>
+          </div>
+		  <div class="x_content">
+            <ul class="change-log">
+              <li>減少遍歷，增強性能。</li>
+              <li>區分父級頁面於子頁面在初始化時執行的方法，增強性能。</li>
+              <li>根據兩個項目的業務邏輯，限定鏈接為身份證。除非為鏈接添加 <code>data-mul</code> 屬性，否則一個鏈接只能創建一個窗口，在已經開啟該頁面的情況下，再次點擊相同href的鏈接，將激活該標籤。</li>
+            </ul>
+		  </div>
+		</div>
+		<div class="x_panel">
+		  <div class="x_title clearfix">
+			<h2>V2.2.3 2016.12.27</h2>
+		    <ul class="nav navbar-right panel_toolbox">
+			  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+            </ul>
+          </div>
+		  <div class="x_content">
+            <ul class="change-log">
+              <li>縮放瀏覽器窗口時自動刷新iframe高度。</li>
+            </ul>
+		  </div>
+		</div>
+		<div class="x_panel">
+		  <div class="x_title clearfix">
+			<h2>V2.2.2 2016.12.08</h2>
+		    <ul class="nav navbar-right panel_toolbox">
+			  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+            </ul>
+          </div>
+		  <div class="x_content">
+            <ul class="change-log">
+              <li>修復 <code>data-reload</code> 需存在且值為 <code>ja</code> 才能再次點擊刷新頁面bug。</li>
+            </ul>
+		  </div>
+		</div>
+		<div class="x_panel">
+		  <div class="x_title clearfix">
+			<h2>V2.2.1 2016.11.16</h2>
+		    <ul class="nav navbar-right panel_toolbox">
+			  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+            </ul>
+          </div>
+		  <div class="x_content">
+            <ul class="change-log">
+              <li>修復 <code>on()</code> 方法不能分別綁定事件的bug，並添加新使用形式，可通過String傳入一個或多個事件，也可以Object形式傳入對象，需包含事件名稱和綁定的事件處理函數。</li>
+              <li>增加 <code>off()</code> 方法，用於解綁通過 <code>on()</code> 方法綁定的事件和移除通過option設定的事件回調函數。</li>
+              <li>優化 <code>destroy()</code> 方法。</li>
+            </ul>
+		  </div>
+		</div>
+		<div class="x_panel">
+		  <div class="x_title clearfix">
+			<h2>V2.2.0 2016.11.15</h2>
+		    <ul class="nav navbar-right panel_toolbox">
+			  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+            </ul>
+          </div>
+		  <div class="x_content">
+            <ul class="change-log">
+              <li>優化代碼結構，增強可讀性。</li>
+              <li>增加 <code>destroy()</code> 方法和 <code>dispose()</code> 方法。</li>
+              <li>增加 <code>on()</code> 綁定事件處理函數。</li>
+            </ul>
+		  </div>
+		</div>
+		<div class="x_panel">
+		  <div class="x_title clearfix">
+			<h2>V2.1.2 2016.11.09</h2>
+		    <ul class="nav navbar-right panel_toolbox">
+			  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+            </ul>
+          </div>
+		  <div class="x_content">
+            <ul class="change-log">
+              <li>優化事件回調函數，在即將創建、切換、關閉窗口時可通過返回值確定是否允許操作。</li>
+            </ul>
+		  </div>
+		</div>
+		<div class="x_panel">
+		  <div class="x_title clearfix">
+			<h2>V2.1.1 2016.11.08</h2>
+		    <ul class="nav navbar-right panel_toolbox">
+			  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+            </ul>
+          </div>
+		  <div class="x_content">
+            <ul class="change-log">
+              <li>修復Mac下右鍵菜單不能正常打開bug。</li>
+            </ul>
+		  </div>
+		</div>
+		<div class="x_panel">
+		  <div class="x_title clearfix">
+			<h2>V2.1.0 2016.11.07</h2>
+		    <ul class="nav navbar-right panel_toolbox">
+			  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+            </ul>
+          </div>
+		  <div class="x_content">
+            <ul class="change-log">
+              <li>優化事件回調函數，整合到 <code>callback</code> 下。</li>
+              <li>增加捕獲創建窗口、切換窗口、關閉窗口的事件回調函數，并分 <code>on</code> ，<code>before</code>，<code>after</code> 三種狀態。</li>
+            </ul>
+		  </div>
+		</div>
+		<div class="x_panel">
+		  <div class="x_title clearfix">
+			<h2>V2.0.0 2016.10.28</h2>
+		    <ul class="nav navbar-right panel_toolbox">
+			  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+            </ul>
+          </div>
+		  <div class="x_content">
+            <ul class="change-log">
+              <li>結構整改，廢除配置項： <code>tabUl</code> ，<code>tabLi</code> ，<code>tabBody</code>，<code>tabPan</code> ，<code>newTabPan</code> 。樣式通過option配置。</li>
+              <li>增加 <code>createCallback</code> 和 <code>changeCallback</code>，分別用於新建標籤和切換標籤時的事件回調函數。</li>
+              <li>增加右鍵菜單。</li>
+              <li>標籤欄默認折疊成一行，增加折疊按鈕。</li>
+              <li>優化事件綁定，增強性能。</li>
+              <li>修復已知bug。</li>
+            </ul>
+		  </div>
+		</div>
+		<div class="x_panel">
+		  <div class="x_title clearfix">
+			<h2>V1.0.0 2016.07.05</h2>
+		    <ul class="nav navbar-right panel_toolbox">
+			  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+            </ul>
+          </div>
+		  <div class="x_content">
+            <ul class="change-log">
+              <li>不再使用 <code>data-link</code> 打開窗口。</li>
+              <li>以 <code>data-num</code> 來判別鏈接是正常打開還是iframeTab形式打開。</li>
+            </ul>
+		  </div>
+		</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../vendor/gentelella/custom.js"></script>
+  <script src="../dist/js/iframeTab.min.js"></script>
+  <script>
+  	$(".title_left").append('<a href="https://www.baidu.com">baidu</a>');
+    var iframeTabOption = {}
+    iframeTab.init(iframeTabOption);
+  </script>
+</body>
